@@ -2,17 +2,17 @@ import 'package:device_frame/device_frame.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
-  runApp(const ExampleApp());
+  runApp(const MyApp());
 }
 
-class ExampleApp extends StatefulWidget {
-  const ExampleApp({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
-  _ExampleAppState createState() => _ExampleAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _ExampleAppState extends State<ExampleApp> {
+class MyAppState extends State<MyApp> {
   bool isDark = true;
   bool isFrameVisible = true;
   bool isKeyboard = false;
@@ -21,6 +21,7 @@ class _ExampleAppState extends State<ExampleApp> {
   final GlobalKey screenKey = GlobalKey();
 
   Orientation orientation = Orientation.portrait;
+
   Widget _frame(DeviceInfo device) => Center(
         child: DeviceFrame(
           device: device,
@@ -73,9 +74,8 @@ class _ExampleAppState extends State<ExampleApp> {
                   onPressed: () {
                     setState(
                       () {
-                        orientation = orientation == Orientation.landscape
-                            ? Orientation.portrait
-                            : Orientation.landscape;
+                        orientation =
+                            orientation == Orientation.landscape ? Orientation.portrait : Orientation.landscape;
                       },
                     );
                   },
@@ -118,10 +118,9 @@ class _ExampleAppState extends State<ExampleApp> {
                   builder: (context) => !isEnabled
                       ? FakeScreen(key: screenKey)
                       : AnimatedBuilder(
-                          animation: DefaultTabController.of(context)!,
+                          animation: DefaultTabController.of(context),
                           builder: (context, _) => _frame(
-                            Devices
-                                .all[DefaultTabController.of(context)!.index],
+                            Devices.all[DefaultTabController.of(context).index],
                           ),
                         ),
                 ),
@@ -135,14 +134,13 @@ class _ExampleAppState extends State<ExampleApp> {
 }
 
 class FakeScreen extends StatefulWidget {
-  const FakeScreen({
-    Key? key,
-  }) : super(key: key);
+  const FakeScreen({super.key});
+
   @override
-  _FakeScreenState createState() => _FakeScreenState();
+  FakeScreenState createState() => FakeScreenState();
 }
 
-class _FakeScreenState extends State<FakeScreen> {
+class FakeScreenState extends State<FakeScreen> {
   bool isDelayEnded = false;
 
   @override
@@ -159,8 +157,7 @@ class _FakeScreenState extends State<FakeScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final mediaQuery = MediaQuery.of(context);
-    final color =
-        theme.platform == TargetPlatform.iOS ? Colors.cyan : Colors.green;
+    final color = theme.platform == TargetPlatform.iOS ? Colors.cyan : Colors.green;
     return Container(
       color: color.shade300,
       padding: mediaQuery.padding,
