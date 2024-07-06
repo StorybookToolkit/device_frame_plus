@@ -1,7 +1,5 @@
 // ignore_for_file: require_trailing_commas, non_constant_identifier_names
 
-import 'dart:ui' as ui;
-
 part of 'device.dart';
 
 // Generated manually with https://fluttershapemaker.com/
@@ -261,30 +259,6 @@ class _FramePainter extends CustomPainter {
     Paint paint_14_fill = Paint()..style=PaintingStyle.fill;
     paint_14_fill.color = Colors.black.withOpacity(1.0);
     canvas.drawPath(path_14,paint_14_fill);
-
-    Path path_15 = Path();
-    path_15.moveTo(134,25);
-    path_15.cubicTo(80.4284,25,37,68.4284,37,122);
-    path_15.lineTo(37,1624);
-    path_15.cubicTo(37,1677.57,80.4284,1721,134,1721);
-    path_15.lineTo(739,1721);
-    path_15.cubicTo(792.572,1721,836,1677.57,836,1624);
-    path_15.lineTo(836,122);
-    path_15.cubicTo(836,68.4284,792.572,25,739,25);
-    path_15.lineTo(134,25);
-    path_15.close();
-    path_15.moveTo(356.176,54);
-    path_15.cubicTo(340.159,54,327.176,66.9837,327.176,83);
-    path_15.cubicTo(327.176,99.0163,340.159,112,356.176,112);
-    path_15.lineTo(514.784,112);
-    path_15.cubicTo(530.801,112,543.784,99.0163,543.784,83);
-    path_15.cubicTo(543.784,66.9837,530.801,54,514.784,54);
-    path_15.lineTo(356.176,54);
-    path_15.close();
-
-    Paint paint_15_fill = Paint()..style=PaintingStyle.fill;
-    paint_15_fill.color = Color(0xffFF0000).withOpacity(1.0);
-    canvas.drawPath(path_15,paint_15_fill);
 
   }
 
