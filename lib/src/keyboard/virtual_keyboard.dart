@@ -163,12 +163,12 @@ class _VirtualKeyboard extends StatelessWidget {
                 right: 12,
               ),
               child: VirtualKeyboardButton(
+                backgroundColor: theme.button2BackgroundColor,
                 child: Icon(
                   Icons.keyboard_capslock,
                   color: theme.button2ForegroundColor,
                   size: 16,
                 ),
-                backgroundColor: theme.button2BackgroundColor,
               ),
             ),
             ..._letters(
@@ -181,12 +181,12 @@ class _VirtualKeyboard extends StatelessWidget {
                 right: spacing,
               ),
               child: VirtualKeyboardButton(
+                backgroundColor: theme.button2BackgroundColor,
                 child: Icon(
                   Icons.backspace,
                   color: theme.button2ForegroundColor,
                   size: 16,
                 ),
-                backgroundColor: theme.button2BackgroundColor,
               ),
             ),
           ]),
@@ -197,6 +197,7 @@ class _VirtualKeyboard extends StatelessWidget {
                   right: spacing,
                 ),
                 child: VirtualKeyboardButton(
+                  backgroundColor: theme.button2BackgroundColor,
                   child: Text(
                     '123',
                     style: TextStyle(
@@ -204,7 +205,6 @@ class _VirtualKeyboard extends StatelessWidget {
                       color: theme.button2ForegroundColor,
                     ),
                   ),
-                  backgroundColor: theme.button2BackgroundColor,
                 ),
               ),
               Padding(
@@ -212,12 +212,12 @@ class _VirtualKeyboard extends StatelessWidget {
                   right: spacing,
                 ),
                 child: VirtualKeyboardButton(
+                  backgroundColor: theme.button2BackgroundColor,
                   child: Icon(
                     Icons.insert_emoticon,
                     color: theme.button2ForegroundColor,
                     size: 16,
                   ),
-                  backgroundColor: theme.button2BackgroundColor,
                 ),
               ),
               Expanded(
@@ -226,6 +226,7 @@ class _VirtualKeyboard extends StatelessWidget {
                     right: spacing,
                   ),
                   child: VirtualKeyboardButton(
+                    backgroundColor: theme.button2BackgroundColor,
                     child: Text(
                       'space',
                       style: TextStyle(
@@ -233,7 +234,6 @@ class _VirtualKeyboard extends StatelessWidget {
                         color: theme.button2ForegroundColor,
                       ),
                     ),
-                    backgroundColor: theme.button2BackgroundColor,
                   ),
                 ),
               ),
@@ -242,6 +242,7 @@ class _VirtualKeyboard extends StatelessWidget {
                   right: spacing,
                 ),
                 child: VirtualKeyboardButton(
+                  backgroundColor: theme.button2BackgroundColor,
                   child: Text(
                     'return',
                     style: TextStyle(
@@ -249,7 +250,6 @@ class _VirtualKeyboard extends StatelessWidget {
                       color: theme.button2ForegroundColor,
                     ),
                   ),
-                  backgroundColor: theme.button2BackgroundColor,
                 ),
               ),
             ],
