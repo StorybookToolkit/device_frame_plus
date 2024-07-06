@@ -1,4 +1,4 @@
-import 'package:device_frame/src/info/info.dart';
+import 'package:device_frame_plus/src/info/info.dart';
 
 import 'package:flutter/widgets.dart';
 

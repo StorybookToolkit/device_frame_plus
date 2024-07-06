@@ -1,16 +1,16 @@
-import 'package:device_frame/src/info/info.dart';
+import 'package:device_frame_plus/src/info/info.dart';
 
-import 'package:device_frame/src/devices/android/samsung_galaxy_s20/device.dart'
+import 'package:device_frame_plus/src/devices/android/samsung_galaxy_s20/device.dart'
     as i_samsung_galaxy_s20;
-import 'package:device_frame/src/devices/android/samsung_galaxy_note20/device.dart'
+import 'package:device_frame_plus/src/devices/android/samsung_galaxy_note20/device.dart'
     as i_samsung_galaxy_note20;
-import 'package:device_frame/src/devices/android/samsung_galaxy_note20_ultra/device.dart'
+import 'package:device_frame_plus/src/devices/android/samsung_galaxy_note20_ultra/device.dart'
     as i_samsung_galaxy_note20_ultra;
-import 'package:device_frame/src/devices/android/samsung_galaxy_a50/device.dart'
+import 'package:device_frame_plus/src/devices/android/samsung_galaxy_a50/device.dart'
     as samsung_galaxy_a50;
-import 'package:device_frame/src/devices/android/oneplus_8_pro/device.dart'
+import 'package:device_frame_plus/src/devices/android/oneplus_8_pro/device.dart'
     as i_oneplus_8_pro;
-import 'package:device_frame/src/devices/android/sony_xperia_1_ii/device.dart'
+import 'package:device_frame_plus/src/devices/android/sony_xperia_1_ii/device.dart'
     as i_sony_xperia_1_ii;
 import 'package:flutter/material.dart';
 

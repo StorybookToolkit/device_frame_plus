@@ -1,14 +1,14 @@
-# device_frame
+# device_frame_plus
 
 <p>
-  <a href="https://pub.dartlang.org/packages/device_frame"><img src="https://img.shields.io/pub/v/device_frame.svg"></a>
+  <a href="https://pub.dartlang.org/packages/device_frame_plus"><img src="https://img.shields.io/pub/v/device_frame_plus.svg"></a>
   <a href="https://www.buymeacoffee.com/aloisdeniel">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
 </p>
 
 <p>
-  <img src="https://github.com/aloisdeniel/flutter_device_preview/raw/master/device_frame/example/example.gif" alt="Device Frame for Flutter" />
+  <img src="https://github.com/aloisdeniel/flutter_device_preview/raw/master/device_frame_plus/example/example.gif" alt="Device Frame for Flutter" />
 </p>
 
 
@@ -154,7 +154,7 @@ DeviceInfo.genericLaptop(
 
 ## Available devices
 
-Screenshots for all available devices are [available in the `test/devices` directory](https://github.com/aloisdeniel/flutter_device_preview/tree/master/device_frame/test/devices)
+Screenshots for all available devices are [available in the `test/devices` directory](https://github.com/aloisdeniel/flutter_device_preview/tree/master/device_frame_plus/test/devices)
 
 ## Contributing
 

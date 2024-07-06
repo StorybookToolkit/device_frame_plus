@@ -1,4 +1,4 @@
-library device_frame;
+library device_frame_plus;
 
 export 'src/devices/devices.dart';
 export 'src/frame.dart';

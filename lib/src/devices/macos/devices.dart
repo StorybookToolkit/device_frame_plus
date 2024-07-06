@@ -1,6 +1,6 @@
-import 'package:device_frame/src/info/info.dart';
+import 'package:device_frame_plus/src/info/info.dart';
 import 'package:flutter/widgets.dart';
-import 'package:device_frame/src/devices/macos/macbook_pro/device.dart'
+import 'package:device_frame_plus/src/devices/macos/macbook_pro/device.dart'
     as i_macbook_pro;
 
 /// A set of macOS devices.

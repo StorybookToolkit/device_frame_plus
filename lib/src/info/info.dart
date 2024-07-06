@@ -1,7 +1,7 @@
-import 'package:device_frame/src/devices/generic/desktop_monitor/device.dart';
-import 'package:device_frame/src/devices/generic/laptop/device.dart';
-import 'package:device_frame/src/devices/generic/phone/device.dart';
-import 'package:device_frame/src/devices/generic/tablet/device.dart';
+import 'package:device_frame_plus/src/devices/generic/desktop_monitor/device.dart';
+import 'package:device_frame_plus/src/devices/generic/laptop/device.dart';
+import 'package:device_frame_plus/src/devices/generic/phone/device.dart';
+import 'package:device_frame_plus/src/devices/generic/tablet/device.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
