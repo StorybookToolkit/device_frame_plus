@@ -1,15 +1,9 @@
-import 'dart:ui';
-
 import 'package:device_frame/device_frame.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 class FakeScreen extends StatelessWidget {
-  const FakeScreen({
-    Key? key,
-  }) : super(key: key);
+  const FakeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,11 +39,9 @@ void main() {
   group('The frame renders correctly for ', () {
     for (var device in Devices.all) {
       testWidgets(device.identifier.toString(), (WidgetTester tester) async {
-        tester.binding.window.devicePixelRatioTestValue = device.pixelRatio;
-        tester.binding.window.physicalSizeTestValue = Size(
-          (device.frameSize.width * 2 +
-                  (device.canRotate ? device.frameSize.height * 2 : 0)) *
-              device.pixelRatio,
+        tester.view.devicePixelRatio = device.pixelRatio;
+        tester.view.physicalSize = Size(
+          (device.frameSize.width * 2 + (device.canRotate ? device.frameSize.height * 2 : 0)) * device.pixelRatio,
           device.frameSize.height * device.pixelRatio,
         );
         const key = Key("device");
@@ -59,10 +51,7 @@ void main() {
               key: key,
               mainAxisSize: MainAxisSize.min,
               children: [
-                for (var orientation in [
-                  if (device.canRotate) Orientation.portrait,
-                  Orientation.landscape
-                ])
+                for (var orientation in [if (device.canRotate) Orientation.portrait, Orientation.landscape])
                   for (var isVirtualKeyboardEnabled in [false, true])
                     DeviceFrame(
                       device: device,
