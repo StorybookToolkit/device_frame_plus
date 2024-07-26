@@ -1,3 +1,7 @@
+## Unreleased
+
+* Fixed virtual keyboard.
+
 ## 1.2.1
 
 * Fixed screen for iphone 14 pro.
