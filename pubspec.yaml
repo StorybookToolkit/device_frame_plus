@@ -1,7 +1,8 @@
 name: device_frame_plus
 description: Mockups for common devices.
-version: 1.2.2
-repository: https://github.com/mjablecnik/device_frame_plus
+version: 1.2.2+1
+issue_tracker: https://github.com/StorybookToolkit/device_frame_plus/issues
+repository: https://github.com/StorybookToolkit/device_frame_plus
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
